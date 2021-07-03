@@ -1,6 +1,6 @@
 import React from 'react'
 import t from 'typy'
-import { arraysEqual } from 'utils'
+import { arraysEqual } from '../utils'
 
 class SelectLayout extends React.Component {
   constructor(props) {

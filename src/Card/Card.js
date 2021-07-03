@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { BackButton } from '../BackButton'
-import ModuleHeader from './Pagination/ModuleHeader'
-import ModuleSearch from './Pagination/ModuleSearch'
+import BackButton from '../BackButton'
+import ModuleHeader from '../Pagination/ModuleHeader'
+import ModuleSearch from '../Pagination/ModuleSearch'
 
 function Card({
   children,

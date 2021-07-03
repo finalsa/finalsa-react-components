@@ -1,2 +1,2 @@
-import SelectLayout from './Select'
-export default SelectLayout
+import Select from './Select'
+export default Select
