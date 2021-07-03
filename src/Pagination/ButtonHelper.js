@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 function ButtonHelper({ onAdd, onSearch, onReload, options }) {
   const buttons = []
@@ -61,7 +61,7 @@ function ButtonHelper({ onAdd, onSearch, onReload, options }) {
   }
 
   return (
-    <>
+    <Fragment>
       {optionsHelper ? (
         <>
           <div className='dropdown is-hoverable is-right'>
@@ -82,7 +82,7 @@ function ButtonHelper({ onAdd, onSearch, onReload, options }) {
         </>
       ) : null}
       <div className='buttons'>{buttons}</div>
-    </>
+    </Fragment>
   )
 }
 export default ButtonHelper

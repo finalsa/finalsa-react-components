@@ -1,10 +1,16 @@
 import React from 'react'
 
-import { ExampleComponent } from 'finalsa-react-components'
+import { BackButton, Counter, Card } from 'finalsa-react-components'
 import 'finalsa-react-components/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <>
+      <BackButton count={1} />
+      <Counter/>
+      <Card></Card>
+    </>
+  )
 }
 
 export default App

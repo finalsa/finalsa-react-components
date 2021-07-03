@@ -18,14 +18,12 @@ function TableData({ col, data, index = 1 }) {
     result = col.default ? col.default : ''
   }
   return (
-    <>
-      <td
-        key={`tb-data-${index}-${col.name}-`}
-        className={`${col.className} m-0`}
-      >
-        {result}
-      </td>
-    </>
+    <td
+      key={`tb-data-${index}-${col.name}-`}
+      className={`${col.className} m-0`}
+    >
+      {result}
+    </td>
   )
 }
 export default TableData

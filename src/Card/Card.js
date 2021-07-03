@@ -21,31 +21,29 @@ function Card({
     }
   }
   return (
-    <>
-      <div className='columns'>
-        <div className={`column ${className}`}>
-          <div className='card px-5'>
-            <ModuleHeader
-              title={title}
-              onSearch={onSearchAction}
-              onAdd={onAdd}
-              onReload={onReload}
-              options={this.props.options}
-            />
-            <ModuleSearch isVisible={searchVisible} onSearch={onSearch} />
-            <div className='card-header px-0'>
-              <div className='level card-header-title  px-0 py-0'>
-                <div className='level-left'>
-                  <BackButton onReturn={onReturn} />
-                </div>
-                <div className='level-right'>{options}</div>
+    <div className='columns'>
+      <div className={`column ${className}`}>
+        <div className='card px-5'>
+          <ModuleHeader
+            title={title}
+            onSearch={onSearchAction}
+            onAdd={onAdd}
+            onReload={onReload}
+            options={options}
+          />
+          <ModuleSearch isVisible={searchVisible} onSearch={onSearch} />
+          <div className='card-header px-0'>
+            <div className='level card-header-title  px-0 py-0'>
+              <div className='level-left'>
+                <BackButton onReturn={onReturn} />
               </div>
+              <div className='level-right'>{options}</div>
             </div>
-            <div className='card-content px-0'>{children}</div>
           </div>
+          <div className='card-content px-0'>{children}</div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -39,35 +39,33 @@ function Counter({ min = 0, max = 10000000, count = 0, onChange = () => {} }) {
     }
   }
   return (
-    <>
-      <div className='field has-addons has-addons-right'>
-        <p className='control has-icons-left has-icons-right'>
-          <input
-            className='input counter-input'
-            style={{ width: '150px' }}
-            type='number'
-            placeholder='numero'
-            value={countHelper}
-            onChange={handleManualWrite}
-          />
+    <div className='field has-addons has-addons-right'>
+      <p className='control has-icons-left has-icons-right'>
+        <input
+          className='input counter-input'
+          style={{ width: '150px' }}
+          type='number'
+          placeholder='numero'
+          value={countHelper}
+          onChange={handleManualWrite}
+        />
 
-          <span className='icon is-small is-left' onClick={handleLess}>
-            <input
-              type='button'
-              value='-'
-              className='counter-button button is-ghost'
-            />
-          </span>
-          <span className='icon is-small is-right' onClick={handlePlus}>
-            <input
-              type='button'
-              value='+'
-              className='counter-button button is-ghost'
-            />
-          </span>
-        </p>
-      </div>
-    </>
+        <span className='icon is-small is-left' onClick={handleLess}>
+          <input
+            type='button'
+            value='-'
+            className='counter-button button is-ghost'
+          />
+        </span>
+        <span className='icon is-small is-right' onClick={handlePlus}>
+          <input
+            type='button'
+            value='+'
+            className='counter-button button is-ghost'
+          />
+        </span>
+      </p>
+    </div>
   )
 }
 
