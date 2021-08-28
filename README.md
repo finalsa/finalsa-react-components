@@ -15,12 +15,41 @@ npm install --save finalsa-react-components
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'finalsa-react-components'
+import {TableModule} from 'finalsa-react-components'
 import 'finalsa-react-components/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    const cols = [
+    {
+      "name" : "Name",
+      "selector" : "name"
+    },
+    {
+      "name" : "Attribute1",
+      "selector" : "attr1"
+    },
+    {
+      "name" : "Year",
+      "selector" : "year"
+    }
+    ]
+    const data = [
+      {"name" : "Luis", "attr1" : "test", "year" : 2021 },
+      {"name" : "Luis", "attr1" : "test", "year" : 2021 },
+      {"name" : "Luis", "attr1" : "test", "year" : 2021 },
+      {"name" : "Luis", "attr1" : "test", "year" : 2021 },
+      {"name" : "Luis", "attr1" : "test", "year" : 2021 },
+      {"name" : "Luis", "attr1" : "test", "year" : 2021 },
+      {"name" : "Luis", "attr1" : "test", "year" : 2021 },
+    ]
+    return <TableModule 
+      title="People"
+      cols={cols}
+      data={[{
+        "name" : "Luis"
+      }]}
+    />
   }
 }
 ```
