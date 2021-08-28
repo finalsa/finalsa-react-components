@@ -12,14 +12,10 @@ const App = () => {
     }
   ]
   return (
-    <>
-      <LoadingBar></LoadingBar>
-      <Select      
-      options={[]}
-      ></Select>
-      <BackButton count={1} />
-      <Counter/>
-      <Card></Card>
+    <div className="container">
+    <div className="columns is-multiline">
+      
+      <div className="column is-full" >
       <TableModule
       title="People"
       cols={cols}
@@ -28,7 +24,20 @@ const App = () => {
       }]}
       automatic={true}
       ></TableModule>
-    </>
+      </div>
+      <div className="column is-full" >
+      <LoadingBar></LoadingBar>
+
+      </div>
+    </div>
+      <Select      
+      options={[]}
+      ></Select>
+      <BackButton count={1} />
+      <Counter/>
+      <Card></Card>
+      
+    </div>
   )
 }
 
