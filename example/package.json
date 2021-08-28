@@ -12,6 +12,7 @@
   "dependencies": {
     "finalsa-react-components": "file:..",
     "react": "file:../node_modules/react",
+    "finalsa-bulma-dark": "file:../node_modules/finalsa-bulma-dark",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
     "typy": "^3.3.0"

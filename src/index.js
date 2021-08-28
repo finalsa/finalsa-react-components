@@ -6,6 +6,7 @@ import Loading from './Loading'
 import LoadingBar from './LoadingBar'
 import Select from './Select'
 import Utils from './utils'
+import TableModule from './Pagination'
 
 export {
   Pagination,
@@ -15,5 +16,6 @@ export {
   Loading,
   LoadingBar,
   Select,
+  TableModule,
   Utils
 }

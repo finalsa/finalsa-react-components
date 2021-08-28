@@ -26,7 +26,8 @@
   "peerDependencies": {
     "react": "^16.0.0",
     "typy": "^3.3.0",
-    "lodash": "^4.1.0"
+    "lodash": "^4.1.0",
+    "finalsa-bulma-dark": "^0.9.3"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -51,5 +52,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "finalsa-bulma-dark": "^0.9.3"
+  }
 }
