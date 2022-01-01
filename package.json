@@ -1,6 +1,6 @@
 {
   "name": "finalsa-react-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React components made with bulma and react.",
   "author": "finalsa",
   "license": "MIT",
@@ -17,12 +17,11 @@
     "prepare": "run-s build",
     "test": "run-s  test:build",
     "test:build": "run-s build",
-
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0",
     "typy": "^3.3.0",
     "lodash": "^4.1.0",
     "finalsa-bulma-dark": "^0.9.3"
